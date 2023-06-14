@@ -1,0 +1,172 @@
+.container1 {
+	min-height: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(7, 32, 63, 1);
+}
+
+.header,
+.footer {
+	background-color: #07203f;
+	border-bottom: 1px solid white;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+.headertext,
+.footertext {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 33px;
+	width: 1540px;
+	margin: 0px auto;
+}
+
+.header h1,
+.footer h1 {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 49px;
+	color: white;
+	position: relative;
+}
+
+.header ul,
+.footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 40px;
+}
+
+.header li a,
+.footer li a {
+	position: relative;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+}
+
+.header li a::before,
+.footer li a::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: white;
+	visibility: hidden;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.header li a:hover::before,
+.footer li a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.header li a:hover,
+.footer li a:hover {
+	transition: 0.5s;
+}
+
+.about {
+	width: 1540px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(7, 32, 63, 1);
+}
+
+.aboutabout {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 78px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 117px;
+	margin-bottom: 116px;
+	width: 100%;
+	gap: 20px;
+}
+
+.aboutme {
+	width: 605px;
+}
+
+.aboutabout h1 {
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 64px;
+	font-weight: 800;
+	line-height: 78px;
+	text-transform: uppercase;
+	height: 78px;
+	color: #fff;
+	margin-bottom: 25px;
+}
+
+.aboutabout article {
+	display: flex;
+	font-family: Roboto;
+	font-size: 36px;
+	font-weight: 400;
+	line-height: 42px;
+	padding-top: 25px;
+	height: 216px;
+	margin-bottom: 66px;
+	justify-content: center;
+	text-align: left;
+	align-items: center;
+	color: rgba(217, 217, 217, 1);
+}
+.contactwithme {
+	background-color: transparent;
+	border: 0.1rem solid white;
+	color: black;
+	width: 605px;
+	height: 128px;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	border-radius: 64px;
+	cursor: pointer;
+}
+
+.contactwithme:hover {
+	background-color: #8bc34a;
+	transition-duration: 1s;
+}
+
+.myphoto {
+	border-radius: 50%;
+	width: 767px;
+	height: 767px;
+	border: solid 0.1px #090707;
+	box-shadow: 0px 2px 0px #eaded4;
+}
