@@ -1,8 +1,0 @@
-[
-    {"text": "        этой кнопкой вы можете удалять задания =>", "status": "InProgress", "important": "High"},
-    {"text": "<= этим чекбоксом отмечать выполнение", "status": "Done", "important": "High"},
-    {"text": "В форме выше вводите приоритетные задания и нажимайте Control + Enter", "status": "InProgress", "important": "High"},
-    {"text": "        этой кнопкой вы можете удалять задания =>", "status": "InProgress", "important": "Low"},
-    {"text": "<= этим чекбоксом отмечать выполнение", "status": "Done", "important": "Low"},
-    {"text": "В форме выше вводите обычные задачи и нажимайте Enter", "status": "InProgress", "important": "Low"}
-]
