@@ -4,66 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
-	<script defer type="module" src="main.js"></script>
-	<title>TODO</title>
+	<script type="module" src="module.js"></script>
+	<script type="module" src="main.js"></script>
+	<title>Калькулятор</title>
 </head>
 <body>
-<div class="wrapper">
-	<header class="header"></header>
-	<main class="main">
-		<div class="main__container">
-			<div class="summary">
-				<div class="summary__block">
-					<div class="form-summary__address">
-						<div class="form-summary__line">
-							<div class="form-summary__title">HIGH</div>
-							<div class="form-summary__shell_High">
-								<form class="addTaskHigh">
-									<label for="textarea"></label>
-									<textarea id="textarea" placeholder="Добавить важных дел" autocomplete="off" name="state"
-											  data-error="Ошибка" data-value="" class="form-summary__textarea"></textarea>
-									<div style="position: relative;">
-										<span id="hint" style="position: absolute; bottom: 8px; right: 5px; color: gray; font-size: 10px;"></span>
-									</div>
-									<img id="createTaskHigh" class="form-summary__img" src="close-icon.svg" alt="" style="cursor: pointer">
-								</form>
-							</div>
-							<div class="form-summary__shell-task" id="rateSample">
-								<label for="rateHIgh"></label>
-								<input id="rateHIgh" autocomplete="off" type="checkbox" checked name="rate" data-error="Ошибка"
-									   data-value="" class="inputt">
-								<div class="form-summary__task">СДЕЛАТЬ TODO !!!</div>
-								<img class="form-summary__img-2" src="close-icon.svg" alt="">
-							</div>
-						</div>
-						<div class="form-summary__line">
-							<div class="form-summary__title">LOW</div>
-							<div class="form-summary__shell_Low">
-								<form class="addTaskLow">
-									<label for="inputLow"></label>
-									<input id="inputLow" oninput="auto_grow(this)" placeholder="Добавить" autocomplete="off" name="state"
-										   data-error="Ошибка" data-value="" class="form-summary__textarea">
-									<div style="position: relative;">
-										<span id="hint2" style="position: absolute; bottom: 8px; right: 5px; color: gray; font-size: 10px;"></span>
-									</div>
-									<img id="createTaskLow" class="form-summary__img" src="close-icon.svg" alt="" style="cursor: pointer">
-								</form>
-							</div>
-						</div>
-						<div class="form-summary__shell-task">
-							<label for="rate"></label><input id="rate" autocomplete="off" type="checkbox" name="rate" data-error="Ошибка"
-															 data-value="" class="inputt">
-							<div class="form-summary__task">Посмотреть ютубчик</div>
-							<img class="form-summary__img-2" src="close-icon.svg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="footer"></footer>
-
-</div>
+<button id="clearButton">C</button>
+<label for="inputA" ><input type="number" id="inputA" placeholder="введите число" required></label>
+<label for="selectOperator"><select id="selectOperator">
+	<option value="+">+</option>
+	<option value="-">-</option>
+	<option value="*">x</option>
+	<option value="/">:</option>
+</select></label>
+<label for="inputB"><input type="number" id="inputB" placeholder="введите число" required></label>
+<button id="equalButton">=</button>
+<output id="result"></output>
+<div id="memoryText"></div>
+<div id="memory"></div>
 </body>
 </html>
