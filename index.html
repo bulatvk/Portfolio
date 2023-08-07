@@ -4,23 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script type="module" src="module.js"></script>
-	<script type="module" src="main.js"></script>
+	<script defer src="main.js"></script>
 	<title>Калькулятор</title>
 </head>
 <body>
 <button id="clearButton">C</button>
-<label for="inputA" ><input type="number" id="inputA" placeholder="введите число" required></label>
-<label for="selectOperator"><select id="selectOperator">
+<label for="inputA" ></label><input type="number" id="inputA" placeholder="введите число" required>
+<label for="selectOperator"></label>
+<select id="selectOperator">
 	<option value="+">+</option>
 	<option value="-">-</option>
 	<option value="*">x</option>
 	<option value="/">:</option>
-</select></label>
-<label for="inputB"><input type="number" id="inputB" placeholder="введите число" required></label>
+</select>
+<label for="inputB"></label><input type="number" id="inputB" placeholder="введите число" required>
 <button id="equalButton">=</button>
 <output id="result"></output>
-<div id="memoryText"></div>
 <div id="memory"></div>
 </body>
 </html>
